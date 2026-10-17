@@ -3,83 +3,155 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Planificador de Finanzas Personales | Orden Digital</title>
-<meta name="description" content="Plantilla en español para controlar ingresos, gastos, presupuesto, metas de ahorro y deudas. Funciona en Excel y Google Sheets. Descarga inmediata.">
-<meta property="og:title" content="Planificador de Finanzas Personales en Excel y Google Sheets">
-<meta property="og:description" content="Ordena tu dinero en 5 minutos: presupuesto, ahorro y deudas en un solo archivo.">
+<title>Orden Digital | Plantillas de Excel y Google Sheets en español</title>
+<meta name="description" content="Plantillas en español para Excel y Google Sheets: finanzas personales, hábitos y control de negocio. Calculadora 50/30/20 gratis. Descarga inmediata.">
+<meta property="og:title" content="Orden Digital | Plantillas para poner orden en tu dinero, tus hábitos y tu negocio">
+<meta property="og:description" content="Plantillas en español para Excel y Google Sheets. Descarga inmediata, pago único.">
+<meta property="og:image" content="img/portada-kit.png">
+<link rel="canonical" href="https://anthonyhenriquezluciano.github.io/tienda-digital/">
 <style>
-:root{--g:#1f7a5a;--gl:#e8f5ef;--t:#1d2939;--m:#667085;--bg:#fff;--card:#f8faf9}
-@media (prefers-color-scheme:dark){:root{--t:#eef2f0;--m:#a5b1ab;--bg:#101614;--card:#18211e;--gl:#1d3a2f}}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--t);background:var(--bg);line-height:1.55}
-.w{max-width:960px;margin:0 auto;padding:0 16px}
-header{padding:56px 0 40px;text-align:center}
-h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0 0 14px}
-.sub{font-size:18px;color:var(--m);max-width:620px;margin:0 auto 26px}
-.btn{display:inline-block;background:var(--g);color:#fff;text-decoration:none;font-weight:700;padding:15px 30px;border-radius:10px;font-size:18px}
-.btn:hover{filter:brightness(1.1)}
-.price{margin-top:12px;color:var(--m)}.price s{margin-right:6px}.price b{color:var(--g);font-size:22px}
-section{padding:36px 0}
-h2{font-size:26px;text-align:center;margin:0 0 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.c{background:var(--card);border:1px solid var(--gl);border-radius:12px;padding:20px}
-.c h3{margin:0 0 6px;font-size:17px;color:var(--g)}.c p{margin:0;color:var(--m);font-size:15px}
-.steps{counter-reset:s;list-style:none;padding:0;max-width:620px;margin:0 auto}
-.steps li{counter-increment:s;padding:10px 0 10px 46px;position:relative}
-.steps li:before{content:counter(s);position:absolute;left:0;top:8px;width:32px;height:32px;border-radius:50%;background:var(--g);color:#fff;display:grid;place-items:center;font-weight:700}
-details{background:var(--card);border-radius:10px;padding:14px 18px;margin:0 auto 10px;max-width:700px}
-summary{font-weight:600;cursor:pointer}
-.cta{background:var(--gl);border-radius:16px;text-align:center;padding:40px 16px;margin:20px 0 50px}
-footer{text-align:center;color:var(--m);font-size:14px;padding:24px 0 40px}
+:root{--g:#1f7a5a;--gd:#145c43;--y:#ffd166;--t:#1d2939;--m:#667085;--bg:#fff;--card:#f8faf9;--line:#e4e7ec}
+@media (prefers-color-scheme:dark){:root{--t:#eef2f0;--m:#a5b1ab;--bg:#0f1513;--card:#17201d;--line:#26332e}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--t);background:var(--bg);line-height:1.55}
+a{color:inherit}.w{max-width:1080px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:20px;text-decoration:none}.logo span{color:var(--g)}
+nav .links a{margin-left:18px;text-decoration:none;color:var(--m);font-size:15px}nav .links a:hover{color:var(--t)}
+@media (max-width:600px){nav .links a:not(:last-child){display:none}}
+.hero{background:linear-gradient(135deg,var(--gd),var(--g) 60%,#2a9a72);color:#fff;padding:72px 0 64px}
+.hero h1{font-size:clamp(32px,5.5vw,54px);line-height:1.08;margin:0 0 16px;max-width:760px}
+.hero p{font-size:19px;opacity:.92;max-width:620px;margin:0 0 28px}
+.btn{display:inline-block;background:var(--g);color:#fff;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:10px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{filter:brightness(1.08)}.btn.y{background:var(--y);color:#1d2939}.btn.ghost{background:transparent;border:2px solid #fff;margin-left:10px}
+.btn[aria-disabled=true]{background:#98a2b3;pointer-events:none}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:15px;opacity:.9}.trust span:before{content:"✔ ";color:var(--y)}
+section{padding:64px 0}h2{font-size:clamp(26px,3.5vw,34px);margin:0 0 10px;text-align:center}
+.lead{text-align:center;color:var(--m);max-width:620px;margin:0 auto 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.prod:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.08)}
+.prod img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+[hidden]{display:none!important}
+nav .links a.btn{color:#fff}
+.prod .b{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.prod h3{margin:0;font-size:18px}.prod p{margin:0;color:var(--m);font-size:15px;flex:1}
+.price{font-size:24px;font-weight:800;color:var(--g)}.price s{font-size:16px;color:var(--m);font-weight:400;margin-left:6px}
+.badge{align-self:flex-start;background:var(--y);color:#1d2939;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:28px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+@media (max-width:760px){.calc{grid-template-columns:1fr}}
+label{display:block;font-weight:600;margin-bottom:6px}
+input[type=number]{width:100%;font-size:22px;padding:12px 14px;border-radius:10px;border:2px solid var(--line);background:var(--bg);color:var(--t)}
+input[type=number]:focus{outline:none;border-color:var(--g)}
+.res .r{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.res .r b{font-size:22px}.dot{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:8px}
+.stack{display:flex;height:16px;border-radius:8px;overflow:hidden;margin:16px 0}
+.tabs{display:flex;gap:8px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--t);padding:9px 16px;border-radius:30px;cursor:pointer;font-size:15px}
+.tabs button[aria-selected=true]{background:var(--g);color:#fff;border-color:var(--g)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:0 auto 10px;max-width:760px}
+summary{font-weight:600;cursor:pointer}details p{color:var(--m);margin:10px 0 0}
+.cta{background:linear-gradient(135deg,#7a3e1f,#b8642e);color:#fff;border-radius:20px;padding:44px 24px;text-align:center}
+.cta h2{color:#fff}.cta p{opacity:.92;margin:0 0 22px}
+footer{text-align:center;color:var(--m);font-size:14px;padding:30px 0 44px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
-<header class="w">
-  <h1>Toma el control de tu dinero en 5 minutos</h1>
-  <p class="sub">Plantilla de finanzas personales en español para Excel y Google Sheets. Anota tus gastos y el archivo calcula tu presupuesto, tu ahorro y cómo salir de deudas.</p>
-  <a class="btn buy" href="https://payhip.com/b/uMcUx">Descargar ahora</a>
-  <div class="price"><s>$19</s><b>$9 USD</b> · pago único · descarga inmediata</div>
-</header>
+<nav><div class="w"><a class="logo" href="#">Orden <span>Digital</span></a>
+<div class="links"><a href="#productos">Productos</a><a href="#calculadora">Calculadora</a><a href="#faq">Preguntas</a><a class="btn" style="padding:8px 14px" href="#productos">Ver plantillas</a></div></div></nav>
 
-<section class="w">
-  <h2>Todo lo que incluye</h2>
-  <div class="grid">
-    <div class="c"><h3>Resumen mensual</h3><p>Ingresos, gastos, balance y tasa de ahorro con gráficos automáticos.</p></div>
-    <div class="c"><h3>Presupuesto</h3><p>Planifica cada categoría y mira en rojo dónde te estás pasando.</p></div>
-    <div class="c"><h3>Registro de movimientos</h3><p>Listas desplegables para anotar cada gasto en segundos.</p></div>
-    <div class="c"><h3>Regla 50/30/20</h3><p>Compara tus necesidades, gustos y ahorro con la proporción ideal.</p></div>
-    <div class="c"><h3>Metas de ahorro</h3><p>Calcula cuánto ahorrar cada mes para llegar a tiempo a cada meta.</p></div>
-    <div class="c"><h3>Plan para salir de deudas</h3><p>Método bola de nieve: te dice qué deuda pagar primero y en cuántos meses.</p></div>
+<header class="hero"><div class="w">
+  <h1>Pon orden en tu dinero, tus hábitos y tu negocio</h1>
+  <p>Plantillas en español para Excel y Google Sheets que hacen los cálculos por ti. Solo escribes tus datos y en minutos ves dónde estás y qué hacer.</p>
+  <a class="btn y" href="#productos">Ver plantillas</a><a class="btn ghost" href="#calculadora">Probar la calculadora gratis</a>
+  <div class="trust"><span>Descarga inmediata</span><span>Pago único, sin suscripción</span><span>Excel, Google Sheets y móvil</span></div>
+</div></header>
+
+<section id="productos"><div class="w">
+  <h2>Plantillas</h2>
+  <p class="lead">Cada plantilla trae instrucciones, ejemplos y fórmulas listas. No necesitas saber de Excel.</p>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="calculadora" style="padding-top:0"><div class="w">
+  <h2>Calculadoras gratis</h2>
+  <p class="lead">Prueba en segundos cómo deberías repartir tu sueldo o cuánto ahorrar para tu meta.</p>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-t="c1">Regla 50/30/20</button>
+    <button role="tab" aria-selected="false" data-t="c2">Meta de ahorro</button>
   </div>
-</section>
+  <div class="calc" id="c1">
+    <div><label for="ing">Tu ingreso mensual neto</label><input id="ing" type="number" min="0" step="10" value="1500" inputmode="decimal">
+      <p style="color:var(--m);font-size:14px">La regla 50/30/20 reparte tu ingreso en necesidades, gustos y ahorro.</p>
+      <div class="stack"><div style="flex:50;background:#1f7a5a"></div><div style="flex:30;background:#5b3fa8"></div><div style="flex:20;background:#ffd166"></div></div></div>
+    <div class="res">
+      <div class="r"><span><i class="dot" style="background:#1f7a5a"></i>Necesidades (50%)</span><b id="n">$750</b></div>
+      <div class="r"><span><i class="dot" style="background:#5b3fa8"></i>Gustos (30%)</span><b id="gu">$450</b></div>
+      <div class="r"><span><i class="dot" style="background:#ffd166"></i>Ahorro (20%)</span><b id="a">$300</b></div>
+      <p style="color:var(--m)">En un año ahorrarías <b id="ay" style="color:var(--g)">$3,600</b>. Lleva el control mes a mes con el <a href="#p-finanzas">Planificador de Finanzas</a>.</p>
+    </div>
+  </div>
+  <div class="calc" id="c2" hidden>
+    <div><label for="meta">¿Cuánto quieres ahorrar?</label><input id="meta" type="number" min="0" step="50" value="3000" inputmode="decimal">
+      <label for="ya" style="margin-top:14px">¿Cuánto tienes ya?</label><input id="ya" type="number" min="0" step="50" value="500" inputmode="decimal">
+      <label for="mes" style="margin-top:14px">¿En cuántos meses?</label><input id="mes" type="number" min="1" step="1" value="12" inputmode="numeric"></div>
+    <div class="res">
+      <div class="r"><span>Te falta</span><b id="falta">$2,500</b></div>
+      <div class="r"><span>Ahorro mensual necesario</span><b id="mensual" style="color:var(--g)">$208.33</b></div>
+      <div class="r"><span>Ahorro semanal</span><b id="semanal">$48.08</b></div>
+      <p style="color:var(--m)">El <a href="#p-finanzas">Planificador de Finanzas</a> calcula esto para todas tus metas y te muestra tu progreso.</p>
+    </div>
+  </div>
+</div></section>
 
-<section class="w">
-  <h2>Cómo funciona</h2>
-  <ol class="steps">
-    <li>Compras y descargas el archivo al instante en tu correo.</li>
-    <li>Lo abres en Excel o lo importas en Google Sheets, también desde el móvil.</li>
-    <li>Anotas tus ingresos y gastos. Todo lo demás se calcula solo.</li>
-  </ol>
-</section>
-
-<section class="w">
-  <h2>Preguntas frecuentes</h2>
-  <details><summary>¿Necesito saber de Excel?</summary><p>No. Solo escribes en las celdas verdes; las fórmulas hacen el resto. Incluye una hoja de instrucciones.</p></details>
-  <details><summary>¿Funciona en Google Sheets o en el celular?</summary><p>Sí. Funciona en Excel, Google Sheets (Archivo &gt; Importar) y LibreOffice.</p></details>
-  <details><summary>¿Sirve para cualquier moneda?</summary><p>Sí. Puedes cambiar el símbolo de moneda en el formato de las celdas.</p></details>
+<section id="faq" style="padding-top:0"><div class="w">
+  <h2>Preguntas frecuentes</h2><p class="lead"></p>
+  <details><summary>¿Necesito saber de Excel?</summary><p>No. Escribes en las celdas de color y las fórmulas hacen el resto. Cada plantilla trae una hoja de instrucciones y datos de ejemplo.</p></details>
+  <details><summary>¿Funciona en Google Sheets o en el celular?</summary><p>Sí. Funcionan en Excel, Google Sheets (Archivo &gt; Importar), LibreOffice y en la app de Google Sheets del móvil.</p></details>
+  <details><summary>¿Cómo recibo la plantilla?</summary><p>Al pagar recibes el enlace de descarga al instante en pantalla y en tu correo.</p></details>
   <details><summary>¿Es un pago mensual?</summary><p>No. Pagas una vez y el archivo es tuyo para siempre.</p></details>
-</section>
+  <details><summary>¿Sirve para cualquier moneda?</summary><p>Sí. Puedes cambiar el símbolo de moneda desde el formato de las celdas.</p></details>
+</div></section>
 
 <div class="w"><div class="cta">
-  <h2>Empieza hoy a ordenar tus finanzas</h2>
-  <a class="btn buy" href="https://payhip.com/b/uMcUx">Quiero mi plantilla por $9</a>
+  <h2>Llévate las 3 plantillas y ahorra $12</h2>
+  <p>Finanzas personales, hábitos y control de negocio en un solo pack.</p>
+  <a class="btn y buy-kit" href="#productos">Quiero el Kit por $19</a>
 </div></div>
 
-<footer class="w">© <span id="y"></span> Orden Digital · Productos digitales en español</footer>
+<footer class="w" style="margin-top:56px">© <span id="y"></span> Orden Digital · Plantillas digitales en español · Pagos seguros con Payhip</footer>
+
 <script>
-// Enlace de compra (Payhip). Se actualiza al crear el producto.
-var BUY_URL = "https://payhip.com/b/uMcUx";
-document.querySelectorAll(".buy").forEach(function(a){a.href = BUY_URL;});
-document.getElementById("y").textContent = new Date().getFullYear();
+// Catálogo. "url" es el enlace de Payhip; vacío = aún no disponible.
+var PRODUCTS = [
+  {id:"p-kit", name:"Kit Orden Digital: 3 plantillas", desc:"Las 3 plantillas juntas: finanzas, hábitos y negocio. El mejor precio.", price:19, old:31, img:"img/portada-kit.png", url:"", badge:"Más vendido"},
+  {id:"p-finanzas", name:"Planificador de Finanzas Personales", desc:"Presupuesto, gastos, regla 50/30/20, metas de ahorro y plan para salir de deudas.", price:9, old:19, img:"img/portada-planificador.png", url:"https://payhip.com/b/uMcUx"},
+  {id:"p-negocio", name:"Control de Negocio para Emprendedores", desc:"Ventas, gastos, ganancia neta, inventario automático y producto estrella del mes.", price:15, old:25, img:"img/portada-negocio.png", url:""},
+  {id:"p-habitos", name:"Rastreador de Hábitos 2026", desc:"12 meses para marcar tus hábitos, con rachas, % de cumplimiento y resumen anual.", price:7, old:12, img:"img/portada-habitos.png", url:""}
+];
+var fmt = function(n){ return "$" + n.toLocaleString("en-US",{minimumFractionDigits: n%1?2:0, maximumFractionDigits:2}); };
+document.getElementById("grid").innerHTML = PRODUCTS.map(function(p){
+  var ok = !!p.url;
+  return '<article class="prod" id="'+p.id+'"><img src="'+p.img+'" alt="'+p.name+'" loading="lazy" width="1280" height="720"><div class="b">'+
+    (p.badge?'<span class="badge">'+p.badge+'</span>':'')+'<h3>'+p.name+'</h3><p>'+p.desc+'</p>'+
+    '<div class="price">'+fmt(p.price)+'<s>'+fmt(p.old)+'</s></div>'+
+    '<a class="btn" '+(ok?'href="'+p.url+'"':'aria-disabled="true"')+'>'+(ok?'Comprar ahora':'Próximamente')+'</a></div></article>';
+}).join("");
+var kit = PRODUCTS[0]; if (kit.url) document.querySelectorAll(".buy-kit").forEach(function(a){ a.href = kit.url; });
+function c1(){ var v=Math.max(0,+document.getElementById("ing").value||0);
+  document.getElementById("n").textContent=fmt(v*.5); document.getElementById("gu").textContent=fmt(v*.3);
+  document.getElementById("a").textContent=fmt(v*.2); document.getElementById("ay").textContent=fmt(v*.2*12); }
+function c2(){ var m=+document.getElementById("meta").value||0, y=+document.getElementById("ya").value||0, n=Math.max(1,+document.getElementById("mes").value||1);
+  var f=Math.max(0,m-y); document.getElementById("falta").textContent=fmt(f);
+  document.getElementById("mensual").textContent=fmt(Math.round(f/n*100)/100);
+  document.getElementById("semanal").textContent=fmt(Math.round(f/(n*52/12)*100)/100); }
+["ing"].forEach(function(i){document.getElementById(i).addEventListener("input",c1)});
+["meta","ya","mes"].forEach(function(i){document.getElementById(i).addEventListener("input",c2)});
+document.querySelectorAll(".tabs button").forEach(function(b){ b.addEventListener("click",function(){
+  document.querySelectorAll(".tabs button").forEach(function(x){ x.setAttribute("aria-selected", x===b); document.getElementById(x.dataset.t).hidden = x!==b; });
+});});
+c1(); c2(); document.getElementById("y").textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
